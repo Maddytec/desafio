@@ -4,7 +4,7 @@
 	version="1.1" bean-discovery-mode="all">
 
 	<interceptors>
-		<class>br.com.maddytec.pedidovenda.util.jpa.TransactionInterceptor</class>
+		<class>br.com.solutis.cyberpunk.util.jpa.TransactionInterceptor</class>
 	</interceptors>
 
 </beans>

@@ -10,13 +10,11 @@ body {
 header {
 	padding: 5px 0px;
 	margin-bottom: 20px;
-	height: 40px;
-	background-color: #545454;
-	color: #fff;
-	box-shadow: 0px 6px 6px #ccc;
+	height: 80px;
+	background-color: #000080; 
 }
 
-header>div {
+header.div {
 	margin-left: 8px;
 }
 
@@ -26,7 +24,7 @@ header>div {
 
 footer {
 	padding: 0px 8px;
-	margin-botton: 10px
+	margin-bottom: 10px
 }
 
 h1 {
@@ -34,20 +32,6 @@ h1 {
 	font-weight: 500;
 	padding: 0px;
 	margin: 0px;
-}
-
-#login-dialog {
-	width: 390px;
-	margin: auto;
-	margin-top: 150px;
-}
-
-.grid-login {
-	background-color: #f2f2f2;
-	border-radius: 8px;
-	border: 1px solid #ccc;
-	margin-top: 8px;
-	padding: 10px;
 }
 
 .rotulo {
@@ -65,7 +49,7 @@ h1 {
 
 .ajax-status {
 	position: fixed;
-	top: 70px;
+	top: 100px;
 	right: 10px;
 	width: 35px;
 	height: 35px
@@ -73,10 +57,6 @@ h1 {
 
 .ui-selectmanycheckbox td label {
 	padding-right: 10px;
-}
-
-.produto-tabela input {
-	width: 99% !important;
 }
 
 /*Customiza TabView - inicio */
@@ -103,9 +83,8 @@ h1 {
 	border: 0px !important;
 	padding: 0px !important;
 	background: none !important;
+	font-size: 20px;
 }
-
-
 .menu-sistema .ui-menu-parent>a .ui-menuitem-text, .menu-sistema>.ui-menu-list>.ui-menuitem>a>.ui-menuitem-text
 	{
 	color: #ffffff !important;
@@ -115,12 +94,6 @@ h1 {
 	{
 	color: #CD1717 !important;
 }
-
-.ui-menuitem-text
-	{
-	color: #CD1717 !important;
-}
-
 
 .menu-sistema .ui-menu-parent>a .ui-menuitem-text, .menu-sistema>.ui-menu-list>.ui-menuitem>a>.ui-menuitem-text> ui-submenu-link {
     color: #CD1717 !important;
@@ -135,22 +108,10 @@ h1 {
 }
 .ui-widget-header {
     border: 1px solid #BB9E48 !important;
-    background: #F5D266 !important}
-
-
+    background: #F5D266 !important
+}
 
 /* Menu sistema fim */
 .ui-state-disabled {
 	opacity: .80 !important;
-}
-
-.xlsx {
-	background-image: url(#{ resource [ 'images:excel.png' ]
-}
-)
-!
-important
-;
-
-
 }

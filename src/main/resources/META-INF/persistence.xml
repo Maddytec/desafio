@@ -8,9 +8,9 @@
 		
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://mary-db.mysql.uhserver.com/mary_db" />
-			<property name="javax.persistence.jdbc.user" value="mary" />
-			<property name="javax.persistence.jdbc.password" value="senha" />
+				value="jdbc:mysql://cyberpunk-db.mysql.uhserver.com/cyberpunk_db" />
+			<property name="javax.persistence.jdbc.user" value="cyberpunk" />
+			<property name="javax.persistence.jdbc.password" value="CyberPunk@9173" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 
 			<property name="hibernate.hbm2ddl.auto" value="update" />

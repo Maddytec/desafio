@@ -8,11 +8,9 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title><ui:insert name="titulo"> Sistema de Pedidos de Venda</ui:insert></title>
+	<title><ui:insert name="titulo">Cyber Punk</ui:insert></title>
 	<h:outputStylesheet library="css" name="sistema.css" />
-	<h:outputScript library="js" name="jquery.maskMoney.js" />
 	<h:outputScript library="js" name="validadores.js" />
-	<h:outputScript library="js" name="calendario_pt_BR.js"  />
 </h:head>
 
 <h:body>	
@@ -25,61 +23,24 @@
 		</f:facet>
 	</p:ajaxStatus>
 
-	<header>
+	<header style="background-color: #000080; height: 60px">
+	
 	<div style="float: left;">
 		<h:link outcome="/Home">
-			<h:graphicImage library="images" name="Logo_mary03.png" />
+			<h:graphicImage height="60px" width="200px" library="images"  name="logo.png" />
 		</h:link>
 	</div>
-
-	<div style="float: right; margin-right: 110px">
+	
+	
+	<div style="float: left; margin-right: 110px; margin-top: 5px; margin-bottom: 5px">
 		<span
-			style="float: left; height: 30px; line-height: 30px; margin-right: 60px">
-			Óla #{seguranca.nomeUsuario}! </span>
+			style="float: left; height: 30px; line-height: 30px; margin-right: 60px;">
+			 </span>
 		<h:form style="display: inline-block">
-			<p:menubar styleClass="menu-sistema">
-				<p:submenu label="Cadastros">
-					<p:menuitem value="Clientes" outcome="/clientes/PesquisaClientes" />
-					<p:menuitem value="Fornecedores" outcome="/fornecedores/PesquisaFornecedores" />
-					<p:menuitem value="Usuários" outcome="/usuarios/PesquisaUsuarios" />
-					<p:menuitem value="Grupo de Usuário"
-						outcome="/grupos/PesquisaGrupos" />
-					<p:separator />
-
-						<p:menuitem value="Produtos" outcome="/produtos/PesquisaProdutos" />
-						<p:submenu label="Atributos">
-							<p:menuitem value="Atributos"
-								outcome="/atributos/PesquisaAtributos" />
-							<p:menuitem value="Variações"
-								outcome="/atributos/PesquisaVariacoes" />
-						</p:submenu>
-
-						<p:submenu label="Categorias">
-							<p:menuitem value="Categorias"
-								outcome="/categorias/PesquisaCategorias" />
-							<p:menuitem value="Subcategorias"
-								outcome="/categorias/PesquisaSubcategorias" />
-						</p:submenu>
-
-
-					</p:submenu>
-				<p:submenu label="Pedidos">
-					<p:menuitem value="Novo pedido" outcome="/pedidos/CadastroPedido" />
-					<p:menuitem value="Pesquisa pedido"
-						outcome="/pedidos/PesquisaPedidos" />
-					<p:menuitem value="Gráfico"
-						outcome="/pedidos/Grafico" />
-				</p:submenu>
-				<p:submenu label="Relatórios">
-					<p:menuitem value="Pedidos emitidos" outcome="/relatorios/RelatorioPedidosEmitidos" />
-					<p:menuitem value="Pedidos por data" outcome="/relatorios/RelatorioPedidosPorData" />
-					<p:menuitem value="Pedidos por código" outcome="/relatorios/RelatorioPedidosPorCodigo" />
-					<p:menuitem value="Pedidos por cliente" outcome="/relatorios/RelatorioPedidosPorCliente" />
-					<p:menuitem value="Pedidos por cliente e data" outcome="/relatorios/RelatorioPedidosPorClienteEData" />
-				</p:submenu>
-				<p:menuitem value="Sair" url="/j_spring_security_logout">
-					
-				</p:menuitem>
+			<p:menubar  styleClass="menu-sistema" style="font-size: 30px">
+				<p:menuitem value="Início" outcome="/Home" />
+				<p:menuitem value="Clones" outcome="/clones/PesquisaClones" />
+				<p:menuitem value="Ajuda" outcome="/clones/Ajuda" />
 			</p:menubar>
 		</h:form>
 	</div>
@@ -93,17 +54,10 @@
 
 	<p:separator style="margin-top: 20px" />
 
-	<footer> MaddyTec tecnologia ao seu alcance - <a
-		href="http://www.maddytec.com.br" target="_blank">www.maddytec.com.br</a>
+	<footer> 
+		Desenvolvido por Madson Silva - 
+		Email: maddytec@gmail.com / madsonnota10@hotmail.com
+	
 	</footer>
-
-	<script>
-	function configurarMoeda(){
-		$(".moeda").maskMoney({decimal: ",", thousands: ".", allowZero: true});
-	}
-		$(document).ready(function(){
-			configurarMoeda();
-		});
-	</script>
 </h:body>
 </html>
